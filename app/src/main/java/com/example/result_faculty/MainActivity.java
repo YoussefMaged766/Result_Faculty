@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnlogin = findViewById(R.id.btnlogin);
-        ed = findViewById(R.id.in);
-        ed2 = findViewById(R.id.pass);
+        ed = findViewById(R.id.edittext_mail);
+        ed2 = findViewById(R.id.edittext_password);
         mAuth = FirebaseAuth.getInstance();
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
