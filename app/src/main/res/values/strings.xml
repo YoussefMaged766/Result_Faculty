@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">result_faculty</string>
+    <string name="app_name">Results</string>
     <string name="signup"><u>Sign Up</u></string>
-    <string name="forget"><u>Forget PassWord</u></string>
+    <string name="forget"><u>Forget Password</u></string>
 </resources>
