@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class DashBoard_activity extends AppCompatActivity {
 
     @Override
