@@ -23,7 +23,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="Good Evening"
-        android:textColor="#a3c7ff"
+        android:fontFamily="@font/baloo"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:layout_margin="15dp"
         />
