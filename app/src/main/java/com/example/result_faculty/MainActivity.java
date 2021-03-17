@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("Damanhour University")
                 .setTitleSize(30F)
                 .setTitleColor(R.color.black)
-                .setSubTitle("Faculty of Computer and Information Science")
+                .setSubTitle("Faculty of Computers and Information ")
                 .setProgressColor(R.color.black)
                 .showProgress(true)
                 .setFullScreen(true)

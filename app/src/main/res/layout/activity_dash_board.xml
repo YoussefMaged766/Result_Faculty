@@ -625,8 +625,11 @@
                         android:fontFamily="@font/baloo"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold|italic"
-                        android:text="@string/word"  />
+                        android:textStyle="bold"
+                        android:drawableEnd="@drawable/error_24"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/word"
+                        android:gravity="center"/>
 
 
                 </LinearLayout>

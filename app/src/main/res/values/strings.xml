@@ -2,6 +2,6 @@
     <string name="app_name">Results</string>
     <string name="signup"><u>Sign Up</u></string>
     <string name="forget"><u>Forget Password</u></string>
-    <string name="word"><u>النتيجة مؤقتة وغير نهائية وجاري مراجعتها واعتمادها من مجلس الكلية ومجلس الجامعة</u></string>
-    <string name="faculty">Faculty of Computer and Information Science</string>
+    <string name="word">النتيجة مؤقتة وغير نهائية وجاري مراجعتها واعتمادها من مجلس الكلية ومجلس الجامعة</string>
+    <string name="faculty">Faculty of Computers and Information </string>
 </resources>

@@ -32,6 +32,7 @@ public class DashBoard_activity extends AppCompatActivity {
         sub_names();
         sub_degrees();
         sub_code();
+        calc_gpa();
 
 
     }
@@ -84,17 +85,17 @@ public class DashBoard_activity extends AppCompatActivity {
 
             }
         });
-        database.getReference().child(auth.getUid()).child("gpa").addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                txtgpa.setText(snapshot.getValue().toString());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        database.getReference().child(auth.getUid()).child("gpa").addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                txtgpa.setText(snapshot.getValue().toString());
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
         database.getReference().child(auth.getUid()).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -389,6 +390,16 @@ public class DashBoard_activity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    void calc_gpa(){
+
+        int sub1 = Integer.valueOf(subject1_degree.getText().toString());
+        int sub2 = Integer.valueOf(subject2_degree.getText().toString());
+        int result = sub1+sub2;
+        txtgpa.setText(subject2_degree.getText().toString() + subject1_degree.getText().toString());
+
 
     }
 }
