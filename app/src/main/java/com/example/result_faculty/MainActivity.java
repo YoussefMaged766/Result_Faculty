@@ -82,11 +82,13 @@ public class MainActivity extends AppCompatActivity {
     }
     void splash(){
         new Splashy(this)
-                .setLogo(R.drawable.ic_card)
-                .setTitle("Splashy")
+                .setLogo(R.drawable.logo )
+                .setTitle("Damanhour University")
+                .setTitleSize(30F)
                 .setTitleColor(R.color.black)
-                .setSubTitle("Damanhour University")
+                .setSubTitle("Faculty of Computer and Information Science")
                 .setProgressColor(R.color.black)
+                .showProgress(true)
                 .setFullScreen(true)
                 .setTime(3000)
                 .setAnimation(Splashy.Animation.SLIDE_IN_LEFT_RIGHT, 800)
