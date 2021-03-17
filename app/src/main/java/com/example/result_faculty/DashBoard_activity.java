@@ -419,17 +419,17 @@ public class DashBoard_activity extends AppCompatActivity {
         int sub8 = Integer.parseInt(subject8_degree.getText().toString());
 
 
-        double gpa1 = 0;
-        double gpa2 = 0;
-        double gpa3 = 0;
-        double gpa4 = 0;
-        double gpa5 = 0;
-        double gpa6 = 0;
-        double gpa7 = 0;
-        double gpa8 = 0;
-        double gpa9 = 0;
-        double gpa10 = 0;
-        double gpa11 = 0;
+        double gpa1 = 0.0;
+        double gpa2 = 0.0;
+        double gpa3 = 0.0;
+        double gpa4 = 0.0;
+        double gpa5 = 0.0;
+        double gpa6 = 0.0;
+        double gpa7 = 0.0;
+        double gpa8 = 0.0;
+        double gpa9 = 0.0;
+        double gpa10 = 0.0;
+        double gpa11 = 0.0;
 
         if (sub1 >= 90 && sub1 <= 100 || sub2 >= 90 && sub2 <= 100 || sub3 >= 90 && sub3 <= 100 || sub4 >= 90 && sub4 <= 100 || sub5 >= 90 && sub5 <= 100 || sub6 >= 90 && sub6 <= 100 || sub7 >= 90 && sub7 <= 100 || sub8 >= 90 && sub8 <= 100) {
             gpa1 = 4.0;
