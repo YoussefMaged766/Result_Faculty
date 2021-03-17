@@ -85,17 +85,18 @@ public class DashBoard_activity extends AppCompatActivity {
 
             }
         });
-//        database.getReference().child(auth.getUid()).child("gpa").addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                txtgpa.setText(snapshot.getValue().toString());
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
+/*        database.getReference().child(auth.getUid()).child("gpa").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+           public void onDataChange(@NonNull DataSnapshot snapshot) {
+               txtgpa.setText(snapshot.getValue().toString());
+          }
+
+           @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+                  });
+      */
         database.getReference().child(auth.getUid()).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
