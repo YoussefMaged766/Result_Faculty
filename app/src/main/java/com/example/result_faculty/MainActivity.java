@@ -16,6 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.rbddevs.splashy.Splashy;
 
 public class MainActivity extends AppCompatActivity {
     FloatingActionButton btnlogin;
@@ -32,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         ed = findViewById(R.id.edittext_mail);
         ed2 = findViewById(R.id.edittext_password);
         mAuth = FirebaseAuth.getInstance();
+
+        splash();
+
+
+
+
+
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View vi) {
@@ -71,5 +79,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    void splash(){
+        new Splashy(this)
+                .setLogo(R.drawable.ic_card)
+                .setTitle("Splashy")
+                .setTitleColor(R.color.black)
+                .setSubTitle("Damanhour University")
+                .setProgressColor(R.color.black)
+                .setFullScreen(true)
+                .setTime(3000)
+                .setAnimation(Splashy.Animation.SLIDE_IN_LEFT_RIGHT, 800)
+                .show();
     }
 }
