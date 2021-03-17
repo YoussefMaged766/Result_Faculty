@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,7 +34,15 @@ public class DashBoard_activity extends AppCompatActivity {
         sub_names();
         sub_degrees();
         sub_code();
-        calc_gpa();
+
+        final Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                calc_gpa();
+
+            }
+        }, 5000);
 
 
     }
@@ -395,10 +405,10 @@ public class DashBoard_activity extends AppCompatActivity {
 
     void calc_gpa(){
 
-        int sub1 = Integer.valueOf(subject1_degree.getText().toString());
-        int sub2 = Integer.valueOf(subject2_degree.getText().toString());
+        int sub1 = Integer.parseInt(subject1_degree.getText().toString());
+        int sub2 = Integer.parseInt(subject2_degree.getText().toString());
         int result = sub1+sub2;
-        txtgpa.setText(subject2_degree.getText().toString() + subject1_degree.getText().toString());
+        txtgpa.setText(result+"");
 
 
     }
