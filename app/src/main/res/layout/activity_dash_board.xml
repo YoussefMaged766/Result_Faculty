@@ -94,7 +94,16 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="35dp"
+                    android:visibility="visible"
                     tools:text="3.4" />
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    />
 
             </LinearLayout>
 

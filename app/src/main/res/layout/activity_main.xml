@@ -144,12 +144,22 @@
         app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/logo"/>
     <ImageView
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toStartOf="@id/logo2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/damanhour_uni"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
         android:id="@+id/logo2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logou"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/logou"/>
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
